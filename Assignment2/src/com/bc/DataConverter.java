@@ -16,10 +16,6 @@ public class DataConverter {
 		List<Customer> customers = FileReader.getCustomers(cust);
 		List<Persons> persons = FileReader.getPersons(pers);
 		List<ProductInfo> products = FileReader.getProductInfo(prod);
-		
-		System.out.println(customers);
-		System.out.println(persons);
-		System.out.println(products);
 
 	}
 
