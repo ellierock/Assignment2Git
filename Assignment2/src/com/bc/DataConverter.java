@@ -1,6 +1,7 @@
 package com.bc;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -16,6 +17,10 @@ public class DataConverter {
 		List<Customer> customers = FileReader.getCustomers(cust);
 		List<Persons> persons = FileReader.getPersons(pers);
 		List<ProductInfo> products = FileReader.getProductInfo(prod);
+		
+		FileWriter.xmlWriter("out/Customers.xml",customers);
+		FileWriter.jsonWriter("out/Customers.xml",customers);
+		
 
 	}
 
